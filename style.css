@@ -1,0 +1,56 @@
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+body{
+height: 100vh;
+width: 100vw;
+background-color: rgba(17, 17, 17, 0.589);
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr 1fr 50px;
+    grid-template-areas: 
+      " nav header header header "
+      " nav card1 card2 card3 "
+      "nav card1 card2 card4 "
+      " nav footer footer footer"
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(236, 36, 36);
+    border-radius: 80px;
+ }
+.nav{
+grid-area: nav;
+background-color: rgb(235, 113, 13);
+ }
+.header{
+ grid-area: header;
+ background-color: rgb(235, 113, 13);
+ }
+ .footer{
+    grid-area: footer;
+}
+.card1 {
+    grid-area: card1;
+}
+ .card2{
+    grid-area: card2;
+}
+.card3{
+    grid-area: card3;
+}
+.card4{
+    grid-area: card4;
+}
